@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Osteria Mercede — Roma</title>
+<meta name="description" content="Osteria Mercede — a modern Roman osteria. Fresh pasta, wood-fired pizza and honest Italian cooking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== 1 · HERO ========== -->
+<header class="hero" id="hero">
+  <div class="topbar">
+    <nav class="nav" aria-label="Main">
+      <span class="nav-pill" id="navPill"></span>
+      <a href="#hero" data-go="hero" class="on">Home<sup>01</sup></a>
+      <a href="#menu" data-go="menu">Menu<sup>02</sup></a>
+      <a href="#contacts" data-go="contacts">Contacts<sup>03</sup></a>
+    </nav>
+    <a class="pill" href="#contacts" data-go="contacts">Reserve a table</a>
+  </div>
+
+  <div class="head">
+    <h1 class="logo" id="logo" aria-label="Osteria Mercede"><span class="logo-in" id="logoIn">Osteria Mercede</span></h1>
+    <div class="dish-meta" aria-live="polite">
+      <p class="dish-name" id="dishName">Spaghetti alla Carbonara</p>
+      <p class="dish-desc" id="dishDesc"></p>
+    </div>
+  </div>
+
+  <figure class="hero-photo hp-left" id="hpLeft"><div class="tilt"><div class="card"><div class="face front"><div class="ph" data-label="Photo"></div></div><div class="face back"><div class="ph" data-label="Photo"></div></div></div></div></figure>
+  <figure class="hero-photo hp-right" id="hpRight"><div class="tilt"><div class="card"><div class="face front"><div class="ph" data-label="Photo"></div></div><div class="face back"><div class="ph" data-label="Photo"></div></div></div></div></figure>
+
+  <div class="hero-nav" aria-label="Switch dish">
+    <button type="button" class="hn" id="prevDish" aria-label="Previous dish"><svg viewBox="0 0 44 16" aria-hidden="true"><path d="M43 8H2M9 1.5L2 8l7 6.5"/></svg></button>
+    <button type="button" class="hn" id="nextDish" aria-label="Next dish"><svg viewBox="0 0 44 16" aria-hidden="true"><path d="M1 8h41M35 1.5L42 8l-7 6.5"/></svg></button>
+  </div>
+
+  <div class="orbit" id="orbit">
+    <div class="orbit-line"></div>
+    <div class="marker" id="marker"><i></i></div>
+    <!-- labels injected by main.js -->
+  </div>
+
+  <div class="plate-wrap" id="plateWrap">
+    <div class="plate-shadow"></div>
+    <div class="plate" id="plate">
+      <div class="well" id="well"></div>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <span class="mono">Scroll ↓</span>
+    <span class="mono" id="counter">01 / 05</span>
+  </div>
+</header>
+
+<!-- ========== 2 · MENU (pinned) ========== -->
+<section class="menu" id="menu">
+  <div class="menu-pin">
+    <span class="mono corner tl">Osteria Mercede</span>
+    <span class="mono corner tr-label">Carta · Menu</span>
+    <span class="mono corner bl">Osteria Mercede — Roma</span>
+    <span class="mono corner br" id="menuCount">Piatto 01 / 06</span>
+
+    <figure class="frame frame-a" id="frameA"><div class="layers"></div><figcaption class="mono"></figcaption></figure>
+    <figure class="frame frame-b" id="frameB"><div class="layers"></div><figcaption class="mono"></figcaption></figure>
+
+    <aside class="menu-list" id="menuList" aria-live="polite"></aside>
+
+    <ul class="cats" id="cats" aria-label="Menu categories"></ul>
+  </div>
+</section>
+
+<!-- ========== 3 · EDITORIAL ========== -->
+<section class="editorial" id="story">
+  <div class="ed-title">
+    <span class="ed-word w-pane">Pane</span>
+    <p class="cap c-top">Peace in a bite,<br>a warm little ritual<br>to slow down your day.</p>
+    <span class="ed-word w-amp">&amp;</span>
+    <p class="cap c-bot">Comfort daily bites,<br>baked every morning<br>in our Roman oven.</p>
+    <span class="ed-word w-panino">Panino</span>
+  </div>
+
+  <figure class="ed-photo" id="edPhoto"><div class="ph" data-label="Panino" data-src="assets/story/panino.jpg" style="--h:34"></div></figure>
+
+  <div class="callout left"><p>Golden melt —<br>perfectly toasted</p><span class="rule"></span></div>
+  <div class="callout right"><p>Crisp from the<br>first bite “crunch”</p><span class="rule"></span></div>
+
+  <div class="ed-giant" aria-hidden="true">Mercede</div>
+</section>
+
+<!-- ========== 4 · FINALE / CONTACTS ========== -->
+<footer class="finale" id="contacts">
+  <span class="meta m-tl mono">Osteria Mercede</span>
+
+  <div class="fin-top">
+    <h2 class="fin-line">For true lovers</h2>
+  </div>
+
+  <div class="fin-bot">
+    <h2 class="fin-line">Of <em>(pasta)</em> and</h2>
+    <h2 class="fin-line">tradition</h2>
+  </div>
+
+  <div class="fin-mid">
+    <span class="meta mono"><em>(Since)</em><br>MMXIV</span>
+    <figure class="fin-photo"><div class="ph" data-label="Chef & plate" data-src="assets/finale/chef.jpg" style="--h:222"></div></figure>
+    <span class="meta mono"><em>(Cuisine)</em><br>Roman · Tuscan</span>
+  </div>
+
+  <address class="fin-addr">
+    <p class="fin-line sm">Osteria Mercede <em>(at)</em></p>
+    <p class="fin-line sm">Via dei Condotti 12</p>
+    <p class="fin-line sm">00187 <em>(Roma)</em> Italia</p>
+    <p class="fine mono">Open Tue–Sun · 12:00 — 23:00<br>Reservations · +39 06 000 0000<span class="sep"> · </span><br class="only-m">ciao@osteriamercede.it</p>
+  </address>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
