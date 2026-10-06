@@ -122,7 +122,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 .frame .layers{position:relative;width:100%;aspect-ratio:var(--ar);overflow:hidden;background:#e7e2da}
 .frame .layer{position:absolute;inset:0}
 .frame figcaption{margin-top:8px;font-size:9px;line-height:1.5;color:var(--ink)}
-.frame-a{--ar:3/4;left:var(--gutter);top:26%;width:clamp(120px,13.3vw,320px)}
+.frame-a{--ar:2/3;left:var(--gutter);top:26%;width:15vw}   /* same card size as the left photo on the first screen */
 .frame-b{--ar:4/5;right:17.3vw;bottom:9svh;width:clamp(120px,14.8vw,340px)}
 
 .menu-list{position:absolute;z-index:3;top:var(--gutter);right:var(--gutter);width:clamp(250px,22vw,440px);padding-top:34px}
